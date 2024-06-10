@@ -151,7 +151,7 @@ public class addCustomer extends javax.swing.JInternalFrame {
         txtlastname.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel6.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 30)); // NOI18N
-        jLabel6.setText("ID Profil:");
+        jLabel6.setText("ID Pelanggan:");
 
         txtid.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 30)); // NOI18N
         txtid.setText("jLabel7");
@@ -363,7 +363,7 @@ public class addCustomer extends javax.swing.JInternalFrame {
             pst.setString(9, address);
             
             pst.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Registrasi Sukses.");
+            JOptionPane.showMessageDialog(null, "Datanya udah berhasil dibuat yaa <3");
         
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(addCustomer.class.getName()).log(Level.SEVERE, null, ex);

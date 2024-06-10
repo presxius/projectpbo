@@ -328,7 +328,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Yu Gothic UI Semibold" size="30" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="ID Profil:"/>
+            <Property name="text" type="java.lang.String" value="ID Pelanggan:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="txtid">

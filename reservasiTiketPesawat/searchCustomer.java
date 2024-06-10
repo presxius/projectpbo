@@ -100,23 +100,30 @@ public class searchCustomer extends javax.swing.JInternalFrame {
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Alamat");
 
+        txtphonum.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtphonum.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtphonumActionPerformed(evt);
             }
         });
 
+        txtemail.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+
+        txtfirstname.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtfirstname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtfirstnameActionPerformed(evt);
             }
         });
 
+        txtaddress.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtaddress.setPreferredSize(new java.awt.Dimension(62, 24));
         jScrollPane1.setViewportView(txtaddress);
 
+        txtlastname.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+
         jLabel6.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 30)); // NOI18N
-        jLabel6.setText("ID Profil:");
+        jLabel6.setText("ID Pelanggan:");
 
         jLabel11.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
@@ -130,11 +137,14 @@ public class searchCustomer extends javax.swing.JInternalFrame {
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Nomor ID");
 
+        txtidnumber.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtidnumber.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtidnumberActionPerformed(evt);
             }
         });
+
+        txtdob.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         txttitle.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txttitle.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nyonya", "Tuan", "Mba", "Mas" }));
@@ -162,7 +172,7 @@ public class searchCustomer extends javax.swing.JInternalFrame {
             }
         });
 
-        jButton5.setFont(new java.awt.Font("Yu Gothic UI Semilight", 1, 18)); // NOI18N
+        jButton5.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 14)); // NOI18N
         jButton5.setText("Search");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -196,23 +206,17 @@ public class searchCustomer extends javax.swing.JInternalFrame {
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(70, 70, 70)
                         .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(32, 32, 32)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel11)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabel12)
-                                .addComponent(txtidnumber, javax.swing.GroupLayout.DEFAULT_SIZE, 291, Short.MAX_VALUE)
-                                .addComponent(jLabel13)
-                                .addComponent(txtdob, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jScrollPane1)))
-                        .addContainerGap(110, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(txttitle, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                    .addComponent(jLabel11)
+                    .addComponent(txtdob, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel13)
+                    .addComponent(txtidnumber, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel12)
+                    .addComponent(txttitle, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(51, 51, 51))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -228,7 +232,7 @@ public class searchCustomer extends javax.swing.JInternalFrame {
                     .addComponent(jLabel11))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtdob, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtdob, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtfirstname, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -237,7 +241,7 @@ public class searchCustomer extends javax.swing.JInternalFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtlastname, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel13)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtidnumber, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -333,7 +337,7 @@ public class searchCustomer extends javax.swing.JInternalFrame {
             pst.setString(9, id);
             
             pst.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Data Telah Di Update.");
+            JOptionPane.showMessageDialog(null, "Yeyy, berhasil diperbarui ><");
         
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(addCustomer.class.getName()).log(Level.SEVERE, null, ex);
@@ -366,26 +370,31 @@ public class searchCustomer extends javax.swing.JInternalFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+        // Mendapatkan ID dari text field
         String id = txtcusid.getText();
         
         try {
+             // Memuat driver JDBC MySQL
             Class.forName ("com.mysql.cj.jdbc.Driver");
+            // Menghubungkan ke database
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/maskapai","root","");
+            // Membuat statement SQL untuk mencari pelanggan berdasarkan ID
             pst = con.prepareStatement("select * from customer where id = ?");
             pst.setString(1, id);
             ResultSet rs = pst.executeQuery();
             
+             // Memeriksa apakah hasil query kosong
             if(rs.next() == false)
             {
-                JOptionPane.showMessageDialog(this, "Data tidak ditemukan.");
+                JOptionPane.showMessageDialog(this, "ID-nya salah, ganteng~");
             }
             else
             {
+                 // Mengambil data pelanggan dari hasil query
                 String fname = rs.getString("first_name");
                 String lname = rs.getString("last_name");
                 String email = rs.getString("email");
                 String phonum = rs.getString("phone_number");
-                
                 
                 String dob = rs.getString("dob");
                 Date date1 = new SimpleDateFormat("yyyy-MM-dd").parse(dob);
@@ -394,6 +403,7 @@ public class searchCustomer extends javax.swing.JInternalFrame {
                 String title1 = rs.getString("title");
                 String address = rs.getString("address");
                 
+                 // Mengambil data pelanggan dari hasil query
                 txtfirstname.setText(fname.trim());
                 txtlastname.setText(lname.trim());
                 txtemail.setText(email.trim());
@@ -409,12 +419,8 @@ public class searchCustomer extends javax.swing.JInternalFrame {
             
             
             
-            
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(searchCustomer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
-            Logger.getLogger(searchCustomer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ParseException ex) {
+        // Menangani dan mencatat kesalahan jika terjadi    
+        } catch (ClassNotFoundException | SQLException | ParseException ex) {
             Logger.getLogger(searchCustomer.class.getName()).log(Level.SEVERE, null, ex);
         }
             

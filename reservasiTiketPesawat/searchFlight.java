@@ -55,21 +55,17 @@ public class searchFlight extends javax.swing.JInternalFrame {
         jLabel3 = new javax.swing.JLabel();
         txttaber = new com.toedter.calendar.JDateChooser();
         txttakeoff = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        txttapul = new com.toedter.calendar.JDateChooser();
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         txtlanding = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        txtjumpen = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         txtharga = new javax.swing.JTextField();
         txtkotasal = new javax.swing.JComboBox<>();
         txtkotatuju = new javax.swing.JComboBox<>();
-        txtnoreg = new javax.swing.JTextField();
+        txtnopen = new javax.swing.JTextField();
         jButton5 = new javax.swing.JButton();
 
         jRadioButtonMenuItem1.setSelected(true);
@@ -107,18 +103,12 @@ public class searchFlight extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Tanggal Pulang");
-
-        txttapul.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-
         jLabel5.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Jam Take-Off:");
 
         jLabel7.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 30)); // NOI18N
-        jLabel7.setText("No. Registrasi:");
+        jLabel7.setText("Nomor Penerbangan:");
 
         txtlanding.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtlanding.addActionListener(new java.awt.event.ActionListener() {
@@ -147,17 +137,6 @@ public class searchFlight extends javax.swing.JInternalFrame {
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Jam Landing:");
 
-        jLabel11.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("Jumlah Penumpang");
-
-        txtjumpen.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtjumpen.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtjumpenActionPerformed(evt);
-            }
-        });
-
         jLabel12.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 18)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Harga");
@@ -182,14 +161,14 @@ public class searchFlight extends javax.swing.JInternalFrame {
         txtkotatuju.setMinimumSize(new java.awt.Dimension(85, 26));
         txtkotatuju.setPreferredSize(new java.awt.Dimension(85, 26));
 
-        txtnoreg.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtnoreg.addActionListener(new java.awt.event.ActionListener() {
+        txtnopen.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtnopen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtnoregActionPerformed(evt);
+                txtnopenActionPerformed(evt);
             }
         });
 
-        jButton5.setFont(new java.awt.Font("Yu Gothic UI Semilight", 1, 18)); // NOI18N
+        jButton5.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 18)); // NOI18N
         jButton5.setText("Search");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -205,92 +184,74 @@ public class searchFlight extends javax.swing.JInternalFrame {
                 .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(19, 19, 19)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(19, 19, 19)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2)
-                                    .addComponent(txtkotasal, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtkotatuju, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel3)
-                                    .addComponent(txttaber, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel4)
-                                    .addComponent(txttapul, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel1))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel10)
-                                    .addComponent(jLabel5)
-                                    .addComponent(txttakeoff, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtlanding, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel11)
-                                    .addComponent(txtjumpen, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel12)
-                                    .addComponent(txtharga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(501, 501, 501)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(43, 43, 43)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jLabel2)
+                            .addComponent(txtkotasal, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtkotatuju, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3)
+                            .addComponent(txttaber, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel1))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 297, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel10)
+                            .addComponent(jLabel5)
+                            .addComponent(txttakeoff, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtlanding, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel12)
+                            .addComponent(txtharga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(79, 79, 79))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel7)
                         .addGap(18, 18, 18)
-                        .addComponent(txtnoreg, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtnopen, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(237, 237, 237)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(63, 63, 63)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addGap(65, 65, 65)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(txtnoreg, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtnopen, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(61, 61, 61)
+                .addGap(41, 41, 41)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jLabel1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txttakeoff, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtkotasal, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel2))
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel10)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtlanding, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel11)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtjumpen, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtkotatuju, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txttaber, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel12)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtharga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txttapul, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(45, 45, 45)
+                    .addComponent(txtkotatuju, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtlanding, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel12))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(txttaber, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtharga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(47, 47, 47)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addContainerGap(71, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -318,44 +279,36 @@ public class searchFlight extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtlandingActionPerformed
 
-    private void txtjumpenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtjumpenActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtjumpenActionPerformed
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        String noreg = txtnoreg.getText();
+        String nopen = txtnopen.getText();
         String kotaAsal = txtkotasal.getSelectedItem().toString();
         String kotaTuju = txtkotatuju.getSelectedItem().toString();
 
         
         DateFormat da = new SimpleDateFormat("yyyy-MM-dd");
         String date = da.format(txttaber.getDate());
-        String dat = da.format(txttapul.getDate());
         String jamTakeOff = txttakeoff.getText();
         String jamLanding = txtlanding.getText();
-        String jumlahPen = txtjumpen.getText();
         String harga = txtharga.getText();
         
         
         try {
             Class.forName ("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/maskapai","root","");
-            pst = con.prepareStatement("update flight set kota_asal = ?, kota_tujuan = ?, tanggal_berangkat = ?, tanggal_pulang = ?, jam_takeoff = ?, jam_landing = ?, jumlah_penumpang = ?, harga = ? where regisid = ?");
+            pst = con.prepareStatement("update flight set kota_asal = ?, kota_tujuan = ?, tanggal_berangkat = ?, jam_takeoff = ?, jam_landing = ?, harga = ? where flightid = ?");
             
             
             pst.setString(1, kotaAsal);
             pst.setString(2, kotaTuju);
             pst.setString(3, date);
-            pst.setString(4, dat);
-            pst.setString(5, jamTakeOff);
-            pst.setString(6, jamLanding);
-            pst.setString(7, jumlahPen);
-            pst.setString(8, harga);
-            pst.setString(9, noreg);
+            pst.setString(4, jamTakeOff);
+            pst.setString(5, jamLanding);
+            pst.setString(6, harga);
+            pst.setString(7, nopen);
             
             pst.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Penjadwalan Ulang Berhasil.");
+            JOptionPane.showMessageDialog(null, "Jangan sampe salah jadwal lagi yach... >_o");
         
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(AddFlight.class.getName()).log(Level.SEVERE, null, ex);
@@ -376,25 +329,25 @@ public class searchFlight extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txthargaActionPerformed
 
-    private void txtnoregActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnoregActionPerformed
+    private void txtnopenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnopenActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_txtnoregActionPerformed
+    }//GEN-LAST:event_txtnopenActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        String regisid = txtnoreg.getText();
+        String nopen = txtnopen.getText();
 
         try {
             Class.forName ("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/maskapai","root","");
-            pst = con.prepareStatement("select * from flight where regisid = ?");
-            pst.setString(1, regisid);
+            pst = con.prepareStatement("select * from flight where flightid = ?");
+            pst.setString(1, nopen);
             ResultSet rs = pst.executeQuery();
 
             if(rs.next() == false)
             {
-                JOptionPane.showMessageDialog(this, "Penerbangan tidak ditemukan.");
+                JOptionPane.showMessageDialog(this, "Coba cek lagi, salah nihh...");
             }
             else
             {
@@ -404,9 +357,7 @@ public class searchFlight extends javax.swing.JInternalFrame {
                 
                 
                 String taber = rs.getString("tanggal_berangkat");
-                String tapu = rs.getString("tanggal_pulang");
-                Date date1 = new SimpleDateFormat("yyyy-MM-dd").parse(taber);
-                Date date2 = new SimpleDateFormat("yyyy-MM-dd").parse(tapu);
+                Date date = new SimpleDateFormat("yyyy-MM-dd").parse(taber);
                 
                 String takeoff = rs.getString("jam_takeoff");
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
@@ -416,16 +367,13 @@ public class searchFlight extends javax.swing.JInternalFrame {
                 DateTimeFormatter fm = DateTimeFormatter.ofPattern("HH:mm");
                 LocalTime parsedTime2 = LocalTime.parse(landing, fm);
 
-                String jumpen = rs.getString("jumlah_penumpang");
                 String harga = rs.getString("harga");
                 
                 txtkotasal.setSelectedItem(kosal.trim());
                 txtkotatuju.setSelectedItem(kotu.trim());
-                txttaber.setDate(date1);
-                txttapul.setDate(date2);
+                txttaber.setDate(date);
                 txttakeoff.setText(parsedTime.toString());
                 txtlanding.setText(parsedTime2.toString());
-                txtjumpen.setText(jumpen.trim());
                 txtharga.setText(harga.trim());
                 
 
@@ -447,24 +395,20 @@ public class searchFlight extends javax.swing.JInternalFrame {
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
     private javax.swing.JTextField txtharga;
-    private javax.swing.JTextField txtjumpen;
     private javax.swing.JComboBox<String> txtkotasal;
     private javax.swing.JComboBox<String> txtkotatuju;
     private javax.swing.JTextField txtlanding;
-    private javax.swing.JTextField txtnoreg;
+    private javax.swing.JTextField txtnopen;
     private com.toedter.calendar.JDateChooser txttaber;
     private javax.swing.JTextField txttakeoff;
-    private com.toedter.calendar.JDateChooser txttapul;
     // End of variables declaration//GEN-END:variables
 
 }
