@@ -151,9 +151,11 @@ public class addCustomer extends javax.swing.JInternalFrame {
         txtlastname.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel6.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 30)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("ID Pelanggan:");
 
         txtid.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 30)); // NOI18N
+        txtid.setForeground(new java.awt.Color(255, 255, 255));
         txtid.setText("jLabel7");
 
         jLabel11.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 18)); // NOI18N
@@ -328,7 +330,7 @@ public class addCustomer extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
         if(txtfirstname.getText().equals(""))
         {
-            
+            JOptionPane.showMessageDialog(null, "Nama depannya belom diisi");
         }
         
         
@@ -415,9 +417,7 @@ public class addCustomer extends javax.swing.JInternalFrame {
            }
 
             
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(addCustomer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
+        } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(addCustomer.class.getName()).log(Level.SEVERE, null, ex);
         }
     }

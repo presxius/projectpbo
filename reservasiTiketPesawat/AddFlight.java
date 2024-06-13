@@ -76,9 +76,11 @@ public class AddFlight extends javax.swing.JInternalFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(1024, 640));
 
         jLabel6.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 30)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("No. Penerbangan:");
 
         txtflightid.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 30)); // NOI18N
+        txtflightid.setForeground(new java.awt.Color(255, 255, 255));
         txtflightid.setText("jLabel7");
 
         jLabel1.setFont(new java.awt.Font("Yu Gothic UI Semilight", 0, 18)); // NOI18N
@@ -231,7 +233,6 @@ public class AddFlight extends javax.swing.JInternalFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(txttaber, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(0, 0, 0)
                                 .addComponent(jLabel12)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(txtharga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -255,7 +256,7 @@ public class AddFlight extends javax.swing.JInternalFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 623, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 604, Short.MAX_VALUE)
         );
 
         pack();
@@ -298,11 +299,9 @@ public class AddFlight extends javax.swing.JInternalFrame {
             pst.setString(7, harga);
             
             pst.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Penerbangan Dibuat.");
+            JOptionPane.showMessageDialog(null, "Sukses ditambah ke database, ganetng >_o");
         
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(AddFlight.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
+        } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(AddFlight.class.getName()).log(Level.SEVERE, null, ex);
         }
         

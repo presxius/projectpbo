@@ -46,6 +46,7 @@ public class LaporanTiket extends javax.swing.JInternalFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
 
+        setClosable(true);
         setMaximumSize(new java.awt.Dimension(1024, 640));
         setMinimumSize(new java.awt.Dimension(1024, 640));
         setPreferredSize(new java.awt.Dimension(1024, 640));
@@ -53,7 +54,7 @@ public class LaporanTiket extends javax.swing.JInternalFrame {
         jPanel1.setBackground(new java.awt.Color(82, 110, 175));
         jPanel1.setPreferredSize(new java.awt.Dimension(1024, 640));
 
-        jLabel6.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 30)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Yu Gothic UI Semibold", 3, 30)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Daftar Tiket Pelanggan JavaAirlines");
 
@@ -95,7 +96,7 @@ public class LaporanTiket extends javax.swing.JInternalFrame {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 863, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(233, 233, 233)
-                        .addComponent(jLabel6)))
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 489, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(106, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
