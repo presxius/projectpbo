@@ -117,7 +117,6 @@ public class searchCustomer extends javax.swing.JInternalFrame {
         });
 
         txtaddress.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtaddress.setPreferredSize(new java.awt.Dimension(62, 24));
         jScrollPane1.setViewportView(txtaddress);
 
         txtlastname.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -227,9 +226,9 @@ public class searchCustomer extends javax.swing.JInternalFrame {
                     .addComponent(txtcusid, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(53, 53, 53)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel11))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtdob, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
